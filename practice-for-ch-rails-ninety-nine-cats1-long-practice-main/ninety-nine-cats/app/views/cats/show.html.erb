@@ -1,2 +1,35 @@
-<%= render 'cat' %>
-
+<h1><%= @cat.name %></h1>
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age</td>
+      <td> <%= @cat.age %> </td>
+    </tr>
+    <tr>
+      <td>Birth date</td>
+      <td> <%= @cat.birth_date %> </td>
+    </tr>
+    <tr>
+      <td>Color</td>
+      <td> <%= @cat.color %> </td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td> <%= @cat.sex %> </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+        <td colspan="2">Description</td>
+    </tr>
+    <tr>
+        <td colspan="2"><%= @cat.description %></td>
+    </tr>
+  </tfoot>
+</table>
